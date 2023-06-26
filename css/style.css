@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.result-summary-card {
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
+}
+.result-summary-card .section-top-card {
+  padding: 20px 10px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+}
+.result-summary-card .section-top-card h4 {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  color: hsl(241, 100%, 89%);
+}
+.result-summary-card .section-top-card .cricle-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+.result-summary-card .section-top-card .cricle-result .result {
+  font-size: 42px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+.result-summary-card .section-top-card .cricle-result p {
+  font-size: 14px;
+  color: hsl(241, 100%, 89%);
+}
+.result-summary-card .section-top-card .text {
+  padding: 20px 40px;
+}
+.result-summary-card .section-top-card .text .head-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+.result-summary-card .section-top-card .text .bottom-text {
+  padding-top: 5px;
+  font-size: 13px;
+  color: hsl(241, 100%, 89%);
+}
+.result-summary-card .section-bottom-card {
+  position: relative;
+  padding: 20px 25px;
+}
+.result-summary-card .section-bottom-card h4 {
+  color: hsl(224, 30%, 27%);
+  padding-bottom: 10px;
+}
+.result-summary-card .section-bottom-card .features .feature-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.result-summary-card .section-bottom-card .features .img-icon {
+  padding-right: 10px;
+}
+.result-summary-card .section-bottom-card .features .feature-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.result-summary-card .section-bottom-card .features .left-p {
+  position: absolute;
+  right: 40px;
+  color: hsl(224, 30%, 27%);
+}
+.result-summary-card .section-bottom-card .features .left-p span {
+  color: hsl(0, 0%, 58%);
+}
+.result-summary-card .section-bottom-card .features .first {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.041);
+}
+.result-summary-card .section-bottom-card .features .second {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.038);
+}
+.result-summary-card .section-bottom-card .features .third {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+.result-summary-card .section-bottom-card .features .fourth {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.03);
+}
+.result-summary-card .section-bottom-card .btn-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.result-summary-card .section-bottom-card .btn-box .btn {
+  padding: 15px 100px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-image 0.3s;
+}
+.result-summary-card .section-bottom-card .btn-box .btn:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 375px) {
+  .result-summary-card .section-top-card {
+    padding: 25px 15px;
+  }
+  .result-summary-card .section-top-card h4 {
+    padding-bottom: 15px;
+    color: hsl(241, 100%, 89%);
+  }
+  .result-summary-card .section-top-card .cricle-result {
+    padding: 30px;
+    height: 120px;
+    width: 120px;
+  }
+  .result-summary-card .section-top-card .cricle-result .result {
+    font-size: 48px;
+  }
+  .result-summary-card .section-top-card .cricle-result p {
+    font-size: 15px;
+  }
+  .result-summary-card .section-top-card .text {
+    padding: 30px 50px;
+  }
+  .result-summary-card .section-top-card .text .head-text {
+    font-size: 24px;
+  }
+  .result-summary-card .section-top-card .text .bottom-text {
+    font-size: 15px;
+  }
+  .result-summary-card .section-bottom-card {
+    padding: 25px 35px;
+  }
+  .result-summary-card .section-bottom-card h4 {
+    padding-bottom: 12px;
+  }
+  .result-summary-card .section-bottom-card .features .feature-item {
+    padding: 12px;
+    font-size: 15px;
+  }
+  .result-summary-card .section-bottom-card .features .left-p {
+    right: 55px;
+  }
+  .result-summary-card .section-bottom-card .btn-box .btn {
+    padding: 15px 120px;
+    border-radius: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .result-summary-card {
+    display: flex;
+    flex-direction: row;
+    margin: 250px;
+    box-shadow: 5px 5px 5px rgba(196, 226, 235, 0.4274509804);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .result-summary-card .section-top-card {
+    width: 300px;
+    height: 450px;
+    border-radius: 30px;
+  }
+  .result-summary-card .section-top-card h4 {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  .result-summary-card .section-top-card .cricle-result {
+    height: 170px;
+    width: 170px;
+  }
+  .result-summary-card .section-top-card .cricle-result .result {
+    font-size: 55px;
+  }
+  .result-summary-card .section-top-card .cricle-result p {
+    font-size: 15px;
+    color: hsl(241, 100%, 89%);
+  }
+  .result-summary-card .section-top-card .text {
+    padding: 30px 40px;
+  }
+  .result-summary-card .section-top-card .text .head-text {
+    font-size: 24px;
+  }
+  .result-summary-card .section-top-card .text .bottom-text {
+    padding-top: 5px;
+    font-size: 15px;
+  }
+  .result-summary-card .section-bottom-card {
+    padding: 47px 30px;
+  }
+  .result-summary-card .section-bottom-card h4 {
+    font-size: 20px;
+    padding-bottom: 22px;
+  }
+  .result-summary-card .section-bottom-card .features .feature-item {
+    margin-bottom: 13px;
+    padding: 13px;
+    font-size: 15px;
+  }
+  .result-summary-card .section-bottom-card .btn-box {
+    padding-top: 12px;
+  }
+  .result-summary-card .section-bottom-card .btn-box .btn {
+    padding: 15px 100px;
+  }
+}/*# sourceMappingURL=style.css.map */

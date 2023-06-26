@@ -1,0 +1,311 @@
+@use './colors' as *;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.result-summary-card {
+	position: relative;
+	background-color: $white;
+
+	.section-top-card {
+		padding: 20px 10px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		background-image: linear-gradient($light-slate-blue-background, $light-royal-blue-background);
+		text-align: center;
+
+		h4 {
+			padding-top: 20px;
+			padding-bottom: 15px;
+			color: $light-lavender;
+		}
+
+		.cricle-result {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+			padding: 20px;
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			background-image: linear-gradient($violet-blue-circle, $persian-blue-circle);
+
+			.result {
+				font-size: 42px;
+				font-weight: bold;
+				color: $white;
+			}
+
+			p {
+				font-size: 14px;
+				color: $light-lavender;
+			}
+		}
+
+		.text {
+			padding: 20px 40px;
+
+			.head-text {
+				font-size: 20px;
+				font-weight: bold;
+				color: $white;
+			}
+
+			.bottom-text {
+				padding-top: 5px;
+				font-size: 13px;
+				color: $light-lavender;
+			}
+		}
+	}
+
+	.section-bottom-card {
+		position: relative;
+		padding: 20px 25px;
+
+		h4 {
+			color: $dark-gray-blue;
+			padding-bottom: 10px;
+		}
+
+		.features {
+			.feature-item {
+				display: flex;
+				flex-direction: row;
+				margin-bottom: 10px;
+				padding: 10px;
+				font-size: 13px;
+				font-weight: bold;
+				border-radius: 10px;
+			}
+
+			.img-icon {
+				padding-right: 10px;
+			}
+
+			.feature-name {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				align-self: center;
+			}
+
+			.left-p {
+				position: absolute;
+				right: 40px;
+				color: $dark-gray-blue;
+
+				span {
+					color: $gray;
+				}
+			}
+
+			.first {
+				color: $light-red;
+				background-color: $light-red-bg;
+			}
+
+			.second {
+				color: $orangey-yellow;
+				background-color: $orangey-yellow-bg;
+			}
+
+			.third {
+				color: $green-teal;
+				background-color: $green-teal-bg;
+			}
+
+			.fourth {
+				color: $cobalt-blue;
+				background-color: $cobalt-blue-bg;
+			}
+		}
+
+		.btn-box {
+			display: flex;
+			justify-content: center;
+			padding-top: 10px;
+
+			.btn {
+				padding: 15px 100px;
+				color: $white;
+				background-color: $dark-gray-blue;
+				border: none;
+				border-radius: 20px;
+				font-weight: bold;
+				transition: background-image 0.3s;
+			}
+
+			.btn:hover {
+				background-image: linear-gradient($light-slate-blue-background, $light-royal-blue-background);
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+
+	a {
+		color: hsl(228, 45%, 44%);
+	}
+}
+
+@media (min-width: 375px) {
+	.result-summary-card {
+		.section-top-card {
+			padding: 25px 15px;
+
+			h4 {
+				padding-bottom: 15px;
+				color: $light-lavender;
+			}
+
+			.cricle-result {
+				padding: 30px;
+				height: 120px;
+				width: 120px;
+
+				.result {
+					font-size: 48px;
+				}
+
+				p {
+					font-size: 15px;
+				}
+			}
+
+			.text {
+				padding: 30px 50px;
+
+				.head-text {
+					font-size: 24px;
+				}
+
+				.bottom-text {
+					font-size: 15px;
+				}
+			}
+		}
+
+		.section-bottom-card {
+			padding: 25px 35px;
+
+			h4 {
+				padding-bottom: 12px;
+			}
+
+			.features {
+				.feature-item {
+					padding: 12px;
+					font-size: 15px;
+				}
+
+				.left-p {
+					right: 55px;
+				}
+			}
+
+			.btn-box {
+				.btn {
+					padding: 15px 120px;
+					border-radius: 25px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.result-summary-card {
+		display: flex;
+		flex-direction: row;
+		margin: 250px;
+		box-shadow: 5px 5px 5px #c4e2eb6d;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+
+		.section-top-card {
+			width: 300px;
+			height: 450px;
+			border-radius: 30px;
+
+			h4 {
+				font-size: 18px;
+				padding-bottom: 20px;
+			}
+
+			.cricle-result {
+				height: 170px;
+				width: 170px;
+
+				.result {
+					font-size: 55px;
+				}
+
+				p {
+					font-size: 15px;
+					color: $light-lavender;
+				}
+			}
+
+			.text {
+				padding: 30px 40px;
+
+				.head-text {
+					font-size: 24px;
+				}
+
+				.bottom-text {
+					padding-top: 5px;
+					font-size: 15px;
+				}
+			}
+		}
+
+		.section-bottom-card {
+			padding: 47px 30px;
+
+			h4 {
+				font-size: 20px;
+				padding-bottom: 22px;
+			}
+
+			.features {
+				.feature-item {
+					margin-bottom: 13px;
+					padding: 13px;
+					font-size: 15px;
+				}
+			}
+
+			.btn-box {
+				padding-top: 12px;
+
+				.btn {
+					padding: 15px 100px;
+				}
+			}
+		}
+	}
+}
